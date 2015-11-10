@@ -1,0 +1,26 @@
+{
+  "name": "baby62",
+  "type": "library",
+  "license": "MIT",
+  "description": "ASCII Text Encoder",
+  "homepage": "http://github.com/benignware-labs/baby62-php",
+  "authors": [
+    {
+      "name": "Rafael Nowrotek",
+      "email": "mail@benignware.com",
+      "homepage": "https://github.com/benignware"
+    }
+  ],
+  "keywords": [
+    "base62", "reversible encoding"
+  ],
+  "support": {
+    "issues": "https://github.com/benignware/wp-asset-manifest/issues"
+  },
+  "require": {
+    "phpunit/phpunit": "3.7.*"
+  },
+  "scripts": {
+    "test": "phpunit test/Baby62Test.php"
+  }
+}
