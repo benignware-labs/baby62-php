@@ -1,7 +1,5 @@
 <?php
 
-namespace Baby62;
-
 /**
  * @author       Rafael Nowrotek <mail@benignware.com>
  * @copyright    2015 Benignware <mail@benignware.com> 
