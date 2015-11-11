@@ -8,7 +8,7 @@ class Baby62Test extends PHPUnit_Framework_TestCase {
   public $baby62;
   
   public function __construct() {
-    $this->baby62 = new Baby62();
+    $this->baby62 = new Baby62\Baby62();
   }
   
   public function testString() {
