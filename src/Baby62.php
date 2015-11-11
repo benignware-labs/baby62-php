@@ -1,5 +1,6 @@
 <?php
 
+namespace Baby62;
 
 /**
  * @author       Rafael Nowrotek <mail@benignware.com>
@@ -57,7 +58,7 @@ class Baby62
           }
         } 
         if (!isset($result_sets[$sequence])) {
-          $result_set = $result_sets[$sequence] = new stdClass();
+          $result_set = $result_sets[$sequence] = new \stdClass;
           $result_set->sequence = $sequence;
           $result_set->occurrences = array();
           $all[] = $result_set;
@@ -183,7 +184,7 @@ class Baby62
               $header = substr($header, strlen($offset_match[0]));
             }
           }
-          $result_set = new stdClass();
+          $result_set = new \stdClass;
           $result_set->sequence = $sequence;
           $result_set->occurrences = $occurrences;
           $results[] = array($sequence, $offset);
