@@ -22,5 +22,8 @@
   },
   "scripts": {
     "test": "phpunit test/Baby62Test.php"
+  },
+  "autoload": {
+    "classmap": ["src"]
   }
 }
