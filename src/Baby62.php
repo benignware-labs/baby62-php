@@ -309,13 +309,9 @@ class Baby62
     
     public static function rotate($s, $n = 13, $codeset = self::CODESET) {
       //Rotate a string by a number.
-      $letterLen=round(strlen($codeset)/2);
-      if($n==-1) $n=(int)($letterLen/2); //Find the "halfway rotate point"
-      $n = (int)$n % ($letterLen);
-      if (!$n) return $s;
-      if ($n < 0) $n += ($letterLen);
-      $rep = substr($codeset, $n * 2) . substr($codeset, 0, $n * 2);
-      return strtr($s, $codeset, $rep);
+      $rep = substr($codeset, $n) . substr($codeset, 0, $n);
+      $string = strtr($s, $codeset, $rep);
+      return $string;
     }
     
     public static function paritySplitEncode($string) {
@@ -362,4 +358,4 @@ class Baby62
       return $string;
     }
     
-}     
+}
